@@ -1,23 +1,25 @@
 # MVP Solo Project
 
-You have 24 hours to produce something compelling using the skills you've honed over the past five weeks.
+You have ~24 hours to produce something compelling using the skills you've honed over the past five weeks.
 
 There are two routes you could take:
-1. MVP - Bare bones [here](https://github.com/hackreactor/hrnyc11-mvp): Come up with a well-defined, well-scoped idea that meets basic requirements and take the steps you deem necessary to make it a reality _OR_
-2. MVP - Starter Kit [here](https://github.com/hackreactor/hrnyc11-mvp-starter): Use the structured guiding requirements to build a CRUD application. 
+1. MVP - Bare bones [here](https://github.com/hackreactor/hrnyc12-mvp): Come up with a well-defined, well-scoped idea that meets basic requirements and take the steps you deem necessary to make it a reality _OR_
+2. MVP - Starter Kit [here](https://github.com/hackreactor/hrnyc12-mvp-starter): Use the structured guiding requirements to build a CRUD application.
+
+_FOR BOTH ROUTES_: Before 11:30am, please fill out a quick form at [mks.io/mvp](http://mks.io/mvp) so we know what you're working on. We will review your idea + tech stack and touch base with you if we're not on board.
 
 ## 1. Bare Minimum Requirements (Bare Bones)
 
 - Use git to track your progress 
 - Start with an empty directory and a blinking cursor. Do not use any generators, templates or previous code.
-- Your app must contain a server and a client application.
+- Your app must contain a server and a client application
 - Deploy the app to Heroku
 
 As you work through the project, you may reference public resources and code from past sprints but __DO NOT COPY AND PASTE CODE.__ This is your chance to synthesize material from the past five weeks. 
 
 ### Project Demos:
 
-Be prepared to spend no more than 2 minutes demoing and explaining your app to classmates and staff. 
+Be prepared to spend no more than 2 minutes demoing and explaining your app to classmates and staff.
 
 ## 2. Structured Requirements (Starter Kit)
 
@@ -28,12 +30,12 @@ The following requirements are divided up into the 3 main pillars of an applicat
 ### Housekeeping
 ##### Complete by Day 1, 12:30pm 
 
-- Brainstorm an idea (implement a technology, build a product, make art, etc).
-- Wireframe the idea (draw out what the finished product would look like).
-- Determine what portion of this could be done in 24 hours.
-- Make a list of features and cut the scope down to only the most essential. 
-- Cut the above scope in half again.
-- Determine what technology makes sense for your project 
+- Brainstorm an idea (implement a technology, build a product, make art, etc)
+- Wireframe the idea (draw out what the finished product would look like)
+- Determine what portion of this could be done in ~24 hours
+- Make a list of features and cut the scope down to only the most essential
+- Cut the above scope in half again
+- Determine what technology makes sense for your project
 - Make sure you have all the necessary global tools installed
   - These include but are not limited to:
   - Node and npm
@@ -42,7 +44,7 @@ The following requirements are divided up into the 3 main pillars of an applicat
   - Webpack (for React builds)
 - Initialize a git repo with `$ git init` (remember to commit often!)
 - Add and update the `.gitignore` file if necessary (you will want to ignore config files)
-- Create the `package.json` file and add any necessary dependencies as you work through the project.
+- Create the `package.json` file and add any necessary dependencies as you work through the project
   - Don't forget to add any npm scripts you might need. _hint_: Maybe a script to start your server?
 - **Do not forgo good planning. Planning is half the battle.** Only proceed if you have a clear idea of what your final product will look like. 
 
