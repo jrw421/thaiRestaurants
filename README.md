@@ -6,7 +6,7 @@ There are two routes you could take:
 1. MVP - Bare bones [here](https://github.com/hackreactor/hrnyc12-mvp): Come up with a well-defined, well-scoped idea that meets basic requirements and take the steps you deem necessary to make it a reality _OR_
 2. MVP - Starter Kit [here](https://github.com/hackreactor/hrnyc12-mvp-starter): Use the structured guiding requirements to build a CRUD application.
 
-_FOR BOTH ROUTES_: Before 11:30am, please fill out a quick form at [mks.io/mvp](http://mks.io/mvp) so we know what you're working on. We will review your idea + tech stack and touch base with you if we're not on board.
+_FOR BOTH ROUTES_: Before 12:00pm, please fill out a quick form at [mks.io/mvp](http://mks.io/mvp) so we know what you're working on. We will review your idea + tech stack and touch base with you if we're not on board.
 
 ## 1. Bare Minimum Requirements (Bare Bones)
 
