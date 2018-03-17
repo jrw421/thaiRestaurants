@@ -1,16 +1,22 @@
-DROP DATABASE IF EXISTS test;
+DROP DATABASE IF EXISTS orchard10;
 
-CREATE DATABASE test;
+CREATE DATABASE orchard10;
 
-USE test;
+USE orchard10;
 
 CREATE TABLE items (
   id int NOT NULL AUTO_INCREMENT,
-  quantity integer NOT NULL,
-  description varchar(50) NOT NULL,
+  name varchar(500) NOT NULL,
+  -- score varchar(500) NOT NULL,
+  grade varchar(500) NOT NULL,
+  cuisine varchar(500) NOT NULL,
+  zipcode varchar(500) NOT NULL,
   PRIMARY KEY (ID)
 );
 
-/*  Execute this file from the command line by typing:
- *    mysql -u root < server/schema.sql
- *  to create the database and the tables.*/
+CREATE TABLE zips (
+  id int NOT NULL AUTO_INCREMENT,
+  zipcode varchar(500) NOT NULL,
+  count int NOT NULL,
+  PRIMARY KEY (ID)
+);

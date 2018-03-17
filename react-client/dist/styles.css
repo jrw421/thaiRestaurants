@@ -1,0 +1,53 @@
+.header {
+  font-size: 70px;
+  box-shadow: 10px 10px 8px 10px #888888;
+  padding-left: 10px;
+}
+
+.header2 {
+    margin-top: 50px;
+    font-size: 40px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.restaurant {
+  list-style-type: none;
+  height: 50px;
+}
+
+table {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+td {
+  vertical-align: bottom;
+  border: 1px solid black;
+}
+
+th {
+  height: 50px;
+  border: 1px solid black;
+}
+
+#progress[value]::-webkit-progress-value::before {
+  width: 100%;
+  height: 100px;
+  content: 200%;
+  position: absolute;
+  right: 0;
+  top: -125%;
+}
+
+#app {
+  font-family: "sans-serif"
+}
+
+#map {
+  width: 100vw;
+  height: 75vh;
+}
