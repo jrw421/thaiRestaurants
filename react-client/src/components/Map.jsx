@@ -52,7 +52,7 @@ loadMap() {
   render() {
     return (
       <div>
-      <header className="header2">Number of Thai Restaurants with an A or B per Zipcode</header>
+      <header className="header2">Number of Thai Restaurants per Zipcode with an A or B Rating</header>
       <br></br>
       <div ref="map" id="map">
         loading map...
