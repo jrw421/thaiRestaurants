@@ -13,6 +13,8 @@ class App extends React.Component {
       items: [],
       zipcodeState: []
     }
+    this.getZips = this.getZips.bind(this)
+    // this.yelpLink = this.yelpLink.bind(this)
   }
 
   componentDidMount() {
@@ -64,7 +66,9 @@ getZips() {
        return (
          <tr>
            <td> {count}</td>
-           <td> {item.name}</td>
+           <td style={{ "cursor": "pointer", "textDecoration": "underline" }}
+             onClick={() => {window.open(`https://www.yelp.com/search?find_desc=${item.name}&find_loc=${item.zipcode}`)}}>
+             {item.name}</td>
            <td> {item.zipcode}</td>
            <td> {item.grade} </td>
          </tr>
