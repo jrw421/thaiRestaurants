@@ -22,7 +22,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
   font-family: sans-serif;
-	/* vertical-align: baseline; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -73,14 +72,11 @@ table {
 
 table {
   text-align: center;
-  /* margin-top: 50px; */
   width: 100%;
-  /* border: 1px solid black; */
 }
 
 td {
   vertical-align: bottom;
-  /* border: 1px solid black; */
   padding: 10px
 }
 
@@ -88,7 +84,6 @@ th {
   color: white;
   background-color: #ff893e;
   height: 50px;
-  /* border: 1px solid black; */
 }
 
 #progress[value]::-webkit-progress-value::before {

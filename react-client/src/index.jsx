@@ -14,20 +14,18 @@ class App extends React.Component {
       zipcodeState: []
     }
     this.getZips = this.getZips.bind(this)
-    // this.yelpLink = this.yelpLink.bind(this)
   }
 
   componentDidMount() {
     $.ajax({
       url: '/items',
       success: (data) => {
-        console.log('here is your data success in mount', data)
         this.setState({
           items: data
         })
       },
       error: (err) => {
-        console.log('we erroring?', err);
+        console.log('error in mount', err);
       }
     });
     this.getZips()
@@ -37,7 +35,6 @@ getZips() {
   let zippie = []
   axios.get('/zip')
   .then((res) => {
-    console.log('res ', res.data)
     this.setState({
       zipcodeState: res.data
     })
@@ -51,8 +48,9 @@ getZips() {
     let count = 0
     return (
       <div>
-      <header className="header">    Thai Restaurant List  </header>
+      <header className="header">Thai Restaurant List</header>
       <table id="table">
+        <tbody>
         <tr>
           <th>#</th>
           <th>Restaurant Name</th>
@@ -60,11 +58,10 @@ getZips() {
           <th>Grade</th>
         </tr>
       {this.state.items.map((item, i) => {
-        {console.log('item score ', item.score)}
-        count++
+      count++
 
        return (
-         <tr>
+         <tr key={i}>
            <td> {count}</td>
            <td style={{ "cursor": "pointer", "textDecoration": "underline" }}
              onClick={() => {window.open(`https://www.yelp.com/search?find_desc=${item.name}&find_loc=${item.zipcode}`)}}>
@@ -74,6 +71,7 @@ getZips() {
          </tr>
        )
       })}
+      </tbody>
     </table>
       {this.state.zipcodeState.length ?
         <Wrapper zips={this.state.zipcodeState}/>
