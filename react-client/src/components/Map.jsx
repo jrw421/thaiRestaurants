@@ -8,25 +8,29 @@ import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-au
 class Map extends React.Component {
   constructor(props) {
     super(props)
+    this.getMap = this.getMap.bind(this)
   }
 
 componentDidUpdate(prevProps, prevState) {
   if (prevProps.google !== this.props.google) {
-    this.loadMap();
+    this.getMap();
   }
 }
 
-loadMap() {
+//Based on the props from the wrapper, render the map
+getMap() {
     if (this.props && this.props.google) {
       const {google} = this.props;
       const maps = google.maps;
-      const mapRef = this.refs.map;
-      const findDiv = ReactDOM.findDOMNode(mapRef);
+      const ref = this.refs.map;
+      const findDiv = ReactDOM.findDOMNode(ref);
+
       const mapConfig = Object.assign({}, {
         center: {lat: zipcodes.lookup(this.props.zips[0].zipcode).latitude, lng: zipcodes.lookup(this.props.zips[0].zipcode).longitude},
         zoom: 11,
         gestureHandling: "cooperative"
       })
+
       this.map = new maps.Map(findDiv, mapConfig);
       var zipData = [];
       let zips = this.props.zips
@@ -35,6 +39,7 @@ loadMap() {
         let latLong = zipcodes.lookup(zip.zipcode)
         let num
         if (zip.count < 20) { num = 3 } else if (zip.count > 20) {num = 10} else {num = 5}
+        //push the weight of each zipcode and the transformed zipcodes to the storage
         zipData.push({
           location: new google.maps.LatLng(latLong.latitude, latLong.longitude),
           weight: num
